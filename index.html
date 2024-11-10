@@ -19,50 +19,59 @@
   </head>
   <body>
     <div class="container">
-      <div class="d-flex row input-div mt-4">
-        <div class="col-12 col-md-6">
+      <div class="d-flex justify-content-center">
+      <div class="row input-div mt-4">
+        <div class="col-12 col-md-4">
           <label for="username-1">Player 1</label>
           <input
-            class="form-control"
+            class="form-control "
             type="text"
             name="username"
             id="username-1"
           />
         </div>
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-4">
           <label class="ms-3" for="username-2">Player 2</label>
           <input
-            class="form-control ms 2"
+            class="form-control "
             type="text"
             name="username"
             id="username-2"
           />
         </div>
+        <div class="col-12 col-md-4 mt-4">
+          <button onclick="getvalues()" class="btn btn-primary">Submit</button>
+        </div>
       </div>
+    </div>
+
       <div
         class="my-div mt-4 d-flex justify-content-center align-items-center flex-column"
       >
         <img
+        id="image"
           style="width: 500px; height: 400px"
           src="assets/still-pic.png"
           alt=""
         />
+        <div class="d-flex justify-content-center align-items-center flex-column">
         <div class="row mt-4">
-          <div class="col-12 col-md-6 head">
-            <button onclick="coinhead()" class="btn btn-primary">HEADs</button>
+          <div class="col-12 col-md-6 head mt-2 d-flex justify-content-center">
+            <button onclick="coinhead() ; toss()" class="btn btn-primary">HEADs</button>
           </div>
-          <div class="col-12 col-md-6 tail">
-            <button onclick="cointail()" class="btn btn-primary">TAILs</button>
+          <div class="col-12 col-md-6 tail mt-2 d-flex justify-content-center">
+            <button onclick="cointail() ; toss()" class="btn btn-primary">TAILs</button>
           </div>
         </div>
-        <div id="user-message" class="mt-4">
+        <div id="user-message" class="mt-4 text-center">
 
         </div>
-        <div class="mt-4">
-          <button class="btn btn-primary">TOSS THE COIN</button>
+        <div class="mt-4 pb-4 d-flex justify-content-center">
+          <button onclick=" tossthecoin() " class="btn btn-primary">TOSS THE COIN</button>
         </div>
       </div>
+    </div>
     </div>
 
     <script src="app.js"></script>

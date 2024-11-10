@@ -3,7 +3,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
 }
 
 .my-div {
@@ -20,4 +19,12 @@ body {
 color:white;
 text-wrap: nowrap;
 
+}
+
+@media screen and (max-width:640px) {
+    #image{
+        width:200px !important;
+        height: 180px !important;
+    }
+    
 }
