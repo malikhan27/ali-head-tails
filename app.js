@@ -39,7 +39,7 @@ function coinhead(){
 }
 function cointail(){
    coinvalue="tails"
-  document.getElementById("user-message").innerHTML=`<span style="color:black; text-transform:capitalize">${coinvalue} is the call from ${name1}</span>
+  document.getElementById("user-message").innerHTML=`<span style="color:black;">${coinvalue} is the call from ${name1}</span>
   <br><span style="color:black;">heads is for ${name2}</span>`
 
 }
