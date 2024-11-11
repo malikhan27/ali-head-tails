@@ -41,13 +41,17 @@
           />
         </div>
         <div class="col-12 col-md-4 mt-4">
-          <button onclick="getvalues()" class="btn btn-primary">Submit</button>
+          <button onclick="getvalues() ; divrevive()" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </div>
+    <div id="second" class="my-div text-center text-wrap p-5 mt-5">
+      <p>ENTER THE ABOVE FIELD TO SEE THE GAME WINDOW</p>
+      <h2 class="mt-5">DEVELOPED BY ALI</h2>
+    </div>
 
       <div
-        class="my-div mt-4 d-flex justify-content-center align-items-center flex-column pb-4"
+       id="first" class="my-div d-none mt-4 d-flex justify-content-center align-items-center flex-column pb-4"
       >
         <img
         id="image"
@@ -58,16 +62,16 @@
         <div class="d-flex justify-content-center align-items-center flex-column">
         <div class="row mt-4">
           <div class="col-12 col-md-6 head mt-2 d-flex justify-content-center">
-            <button onclick="coinhead() ; toss()" class="btn btn-primary">HEADs</button>
+            <button onclick="coinhead() ; toss() ; buttonrevive()" class="btn btn-primary">HEADs</button>
           </div>
           <div class="col-12 col-md-6 tail mt-2 d-flex justify-content-center">
-            <button onclick="cointail() ; toss()" class="btn btn-primary">TAILs</button>
+            <button onclick="cointail() ; toss() ; buttonrevive()" class="btn btn-primary">TAILs</button>
           </div>
         </div>
         <div id="user-message" class="mt-4 text-center">
 
         </div>
-        <div class="mt-4 pb-4 d-flex justify-content-center">
+        <div id="third" class="mt-4 pb-4 d-none d-flex justify-content-center">
           <button onclick=" tossthecoin() " class="btn btn-primary">TOSS THE COIN</button>
         </div>
       </div>
