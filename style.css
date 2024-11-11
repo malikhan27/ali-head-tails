@@ -24,8 +24,8 @@ body ,html {
 .input-div{
 color:white;
 text-wrap: nowrap;
-
 }
+
 
 @media screen and (max-width:640px) {
     #image{
@@ -44,6 +44,7 @@ text-wrap: nowrap;
         font-size: 20px !important;
         font-weight: bolder;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: capitalize !important;
     }
     body ,html {
         background-image: url(assets/cricket.jpg!sw800);

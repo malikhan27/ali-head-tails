@@ -15,6 +15,7 @@ function divrevive(){
     
     document.getElementById("first").classList.remove("d-none")
     document.getElementById("second").classList.add("d-none")
+    document.getElementById("fifth").innerHTML=`<h2 style="color:navy">${name1} to call</h2>`
     
  }
   else{
@@ -32,12 +33,14 @@ function divrevive(){
 
 
 function coinhead(){ 
-  coinvalue="head"
-  document.getElementById("user-message").innerHTML=`<span style="color:black;">You have chosen ${coinvalue} ${name1}</span>`
+  coinvalue="heads"
+  document.getElementById("user-message").innerHTML=`<span style="color:black;">${coinvalue} is the call from ${name1}</span> <br>
+  <span style="color:black;">tails is for ${name2}</span>`
 }
 function cointail(){
-   coinvalue="tail"
-  document.getElementById("user-message").innerHTML=`<span style="color:black;">You have chosen ${coinvalue} ${name1}</span>`
+   coinvalue="tails"
+  document.getElementById("user-message").innerHTML=`<span style="color:black; text-transform:capitalize">${coinvalue} is the call from ${name1}</span>
+  <br><span style="color:black;">heads is for ${name2}</span>`
 
 }
 
@@ -83,7 +86,7 @@ function player2(){
 
 function tossthecoin(){ 
   toss()
-  coinarr=["head","tail"]
+  coinarr=["heads","tails"]
   randomvalue= Math.floor(Math.random()*2)
   if(coinarr[randomvalue]===coinvalue){
     setTimeout(player1,2000)
