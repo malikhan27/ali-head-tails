@@ -59,26 +59,44 @@ function toss(){
 }
    
 
+function player1(){
+  Swal.fire
+  ({
+    title: "Congratulations! "+name1 , 
+    text: "its " + coinvalue +" You Won" ,
+    icon: "success"
+  });
+}
+
+function player2(){
+  coinarr=["head","tail"]
+  randomvalue
+  Swal.fire({
+  title: "Congratulations! " + name2 , 
+  text: "its "+ coinarr[randomvalue]+" You Won" ,
+  icon: "success"
+  });
+}
+
+
+
+
 function tossthecoin(){ 
   toss()
-  var coinarr=["head","tail"]
-  var randomvalue= Math.floor(Math.random()*2)
+  coinarr=["head","tail"]
+  randomvalue= Math.floor(Math.random()*2)
   if(coinarr[randomvalue]===coinvalue){
-    Swal.fire({
-      title: "Congratulations! "+name1 , 
-      text: "its "+coinvalue+" You Won" ,
-      icon: "success"
-    });}
+    setTimeout(player1,2000)
+   }
     else{
-      Swal.fire({
-        title: "Congratulations! " +name2 , 
-      text: "its "+coinarr[randomvalue]+" You Won" ,
-      icon: "success"
-      });
+    setTimeout(player2,2000)
+
     }
 setTimeout(stillimage,2000)
     
 }
+
+
 
 
 
