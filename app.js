@@ -97,7 +97,7 @@ function tossthecoin(){
     setTimeout(player2,1800)
 
     }
-setTimeout(stillimage,1500)
+setTimeout(stillimage,1200)
     
 }
 
