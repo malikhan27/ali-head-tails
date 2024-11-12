@@ -19,6 +19,8 @@ function divrevive(){
     
  }
   else{
+    document.getElementById("first").classList.add("d-none")
+    document.getElementById("second").classList.remove("d-none")
     Swal.fire({
       title: "Sorry! USER"  , 
     text: "please fill and submit the fileds to participate" ,
@@ -89,13 +91,13 @@ function tossthecoin(){
   coinarr=["heads","tails"]
   randomvalue= Math.floor(Math.random()*2)
   if(coinarr[randomvalue]===coinvalue){
-    setTimeout(player1,2000)
+    setTimeout(player1,1500)
    }
     else{
-    setTimeout(player2,2000)
+    setTimeout(player2,1800)
 
     }
-setTimeout(stillimage,2000)
+setTimeout(stillimage,900)
     
 }
 

@@ -6,6 +6,16 @@ body ,html {
     height: 100vh;
 }
 
+.head{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(59, 56, 245);
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-transform: capitalize !important;
+
+}
+
 .my-div {
     background: rgba(255, 255, 255, 0.35);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -51,7 +61,7 @@ text-wrap: nowrap;
         background-image: url(assets/cricket.jpg!sw800);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh !important;
+        height: auto !important;
         width: 100% !important;
     }
     
