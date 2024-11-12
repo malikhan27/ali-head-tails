@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="container-fluid text-center text-wrap head">
-      <h1>HEAD AND TAIL <br /> TOSS GAME</h1>
-    </div>
-    <div class="container pb-4">
-      <div class="d-flex justify-content-center">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid text-center text-wrap head">
+    <h1>HEAD AND TAIL <br /> TOSS GAME</h1>
+  </div>
+  <div class="container pb-4">
+    <div class="d-flex justify-content-center">
       <div class="row input-div mt-4">
         <div class="col-12 col-md-4">
           <label for="username-1">Player 1</label>
-          <input
-            class="form-control "
-            type="text"
-            name="username"
-            id="username-1"
-          />
+          <input class="form-control " type="text" name="username" id="username-1" />
         </div>
 
         <div class="col-12 col-md-4">
           <label for="username-2">Player 2</label>
-          <input
-            class="form-control "
-            type="text"
-            name="username"
-            id="username-2"
-          />
+          <input class="form-control " type="text" name="username" id="username-2" />
         </div>
         <div class="col-12 col-md-4 mt-4 d-flex justify-content-center">
           <button onclick="getvalues() ; divrevive()" class="btn btn-primary">Submit</button>
@@ -49,20 +35,13 @@
       </div>
     </div>
     <div id="second" class="my-div text-center text-wrap p-5 mt-5">
-      <p>ENTER THE ABOVE FIELD TO SEE THE GAME WINDOW</p>
+      <p class="mt-3">ENTER THE ABOVE FIELD TO SEE THE GAME WINDOW</p>
       <h2 class="mt-5">DEVELOPED BY ALI</h2>
     </div>
 
-      <div
-       id="first" class="my-div d-none mt-4 d-flex justify-content-center align-items-center flex-column pb-4"
-      >
-        <img
-        id="image"
-          style="width: 500px; height: 400px"
-          src="assets/still-pic.png"
-          alt=""
-        />
-        <div class="d-flex justify-content-center align-items-center flex-column">
+    <div id="first" class="my-div d-none mt-4 d-flex justify-content-center align-items-center flex-column pb-4">
+      <img id="image" style="width: 500px; height: 400px" src="assets/still-pic.png" alt="" />
+      <div class="d-flex justify-content-center align-items-center flex-column">
         <div class="mt-4 mb-2" id="fifth"></div>
         <div class="row mt-4">
           <div class="col-12 col-md-6 head mt-2 d-flex justify-content-center">
@@ -80,19 +59,17 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
+  <br> <br>
 
-    <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

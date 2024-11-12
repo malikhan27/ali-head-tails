@@ -91,13 +91,13 @@ function tossthecoin(){
   coinarr=["heads","tails"]
   randomvalue= Math.floor(Math.random()*2)
   if(coinarr[randomvalue]===coinvalue){
-    setTimeout(player1,1500)
+    setTimeout(player1,1800)
    }
     else{
     setTimeout(player2,1800)
 
     }
-setTimeout(stillimage,900)
+setTimeout(stillimage,1500)
     
 }
 
