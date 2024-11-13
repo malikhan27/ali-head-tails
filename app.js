@@ -12,23 +12,56 @@ function getvalues(){
 
 function divrevive(){
   if(name1!=="" && name2!=="" && name1!==undefined){
-    
-    document.getElementById("first").classList.remove("d-none")
-    document.getElementById("second").classList.add("d-none")
-    document.getElementById("fifth").innerHTML=`<h2 style="color:navy">${name1} to call</h2>`
-    
- }
-  else{
-    document.getElementById("first").classList.add("d-none")
-    document.getElementById("second").classList.remove("d-none")
-    Swal.fire({
-      title: "Sorry! USER"  , 
-    text: "please fill and submit the fileds to participate" ,
-    icon: "error"
-    })
-    
+    if(name1.length>=3 && name2.length>=3){
+      if(name1!==name2){
+      for(i=0;i<name1.length && i<name2.length;i++){
+        if(name1[i]!==" " && name2[i]!==" "){
+          document.getElementById("first").classList.remove("d-none")
+          document.getElementById("second").classList.add("d-none")
+          document.getElementById("fifth").innerHTML=`<h2 style="color:navy">${name1} to call</h2>`
+        }
+        else{
+          document.getElementById("first").classList.add("d-none")
+          document.getElementById("second").classList.remove("d-none")
+          Swal.fire({
+            title: "Sorry! USER"  , 
+          text: "Your Name Can't Contain Space" ,
+          icon: "error"
+          })
 
-}
+        }
+      }
+       
+      }
+      else{
+        document.getElementById("first").classList.add("d-none")
+        document.getElementById("second").classList.remove("d-none")
+        Swal.fire({
+          title: "Sorry! USER"  , 
+        text: "Both Names Can't Be Same" ,
+        icon: "error"})
+
+      }
+     
+    }
+    else{
+      document.getElementById("first").classList.add("d-none")
+      document.getElementById("second").classList.remove("d-none")
+      Swal.fire({
+        title: "Sorry! USER"  , 
+      text: "Your Name Should Atleast Have 3 Charachters" ,
+      icon: "error"
+      })}
+ } else{
+  document.getElementById("first").classList.add("d-none")
+  document.getElementById("second").classList.remove("d-none")
+  Swal.fire({
+    title: "Sorry! USER"  , 
+  text: "please fill and submit the fileds to participate" ,
+  icon: "error"
+  })
+ }
+  
 }
 
    
@@ -91,13 +124,13 @@ function tossthecoin(){
   coinarr=["heads","tails"]
   randomvalue= Math.floor(Math.random()*2)
   if(coinarr[randomvalue]===coinvalue){
-    setTimeout(player1,1800)
+    setTimeout(player1,1200)
    }
     else{
-    setTimeout(player2,1800)
+    setTimeout(player2,1200)
 
     }
-setTimeout(stillimage,950)
+setTimeout(stillimage,1500)
     
 }
 
