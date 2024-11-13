@@ -15,12 +15,8 @@ function divrevive(){
     if(name1.length>=3 && name2.length>=3){
       if(name1!==name2){
       for(i=0;i<name1.length && i<name2.length;i++){
-        if(name1[i]!==" " || name2[i]!==" "){
-          document.getElementById("first").classList.remove("d-none")
-          document.getElementById("second").classList.add("d-none")
-          document.getElementById("fifth").innerHTML=`<h2 style="color:navy">${name1} to call</h2>`
-        }
-        else{
+        if(name1[i]===" " || name2[i]===" "){
+
           document.getElementById("first").classList.add("d-none")
           document.getElementById("second").classList.remove("d-none")
           Swal.fire({
@@ -28,6 +24,12 @@ function divrevive(){
           text: "Your Name Can't Contain Space" ,
           icon: "error"
           })
+          break
+        } 
+        else{
+          document.getElementById("first").classList.remove("d-none")
+          document.getElementById("second").classList.add("d-none")
+          document.getElementById("fifth").innerHTML=`<h2 style="color:navy">${name1} to call</h2>`
 
         }
       }
