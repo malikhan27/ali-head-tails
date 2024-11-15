@@ -1,6 +1,8 @@
 var name1 = "admin"
 var name2 = "admin"
 var coinvalue ="xyz"
+var coinarr
+var randomvalue
 
 function getvalues(){
   name1 = document.getElementById("username-1")
@@ -14,7 +16,7 @@ function divrevive(){
   if(name1!=="" && name2!=="" && name1!==undefined){
     if(name1.length>=3 && name2.length>=3){
       if(name1!==name2){
-      for(i=0;i<name1.length && i<name2.length;i++){
+      for(i=0;i<20;i++){
         if(name1[i]===" " || name2[i]===" "){
 
           document.getElementById("first").classList.add("d-none")
